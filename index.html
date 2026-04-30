@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PearlSmile Dental — Premium Dental Care</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursor-dot"></div>
+
+<!-- Loader -->
+<div class="loader" id="loader">
+  <div class="loader-logo">
+    <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="tooth-path" d="M30 8C22 8 16 14 16 22c0 4 1.5 7.5 4 10l2 18c.5 2 2 3 4 3s3.5-1 4-3l1-8h-2l1 8c.3 1.5 1.5 1.5 1.5 1.5s1.2 0 1.5-1.5l1-8h-2l1 8c.5 2 2 3 4 3s3.5-1 4-3l2-18c2.5-2.5 4-6 4-10 0-8-6-14-14-14z" stroke="#c8a96e" stroke-width="1.5" fill="none"/>
+    </svg>
+    <p>PearlSmile</p>
+  </div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<!-- Navigation -->
+<nav class="nav" id="nav">
+  <div class="nav-logo">
+    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+      <path d="M20 4C14 4 9 9 9 15c0 3 1 5.5 3 7.5L14 36c.4 1.5 1.5 2 3 2s2.5-.8 3-2l.7-6h-.7l.7-6h-.7l.7 6h-.7l.7 6c.5 1.2 1.5 2 3 2s2.6-.5 3-2l2-13.5c2-2 3-4.5 3-7.5 0-6-5-11-11-11z" stroke="currentColor" stroke-width="1.2" fill="none"/>
+    </svg>
+    <span>PearlSmile</span>
+  </div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#home" class="nav-link">Home</a></li>
+    <li><a href="#services" class="nav-link">Services</a></li>
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#team" class="nav-link">Team</a></li>
+    <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+  </ul>
+  <a href="#contact" class="btn-nav">Book Appointment</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <ul>
+    <li><a href="#home" class="mob-link">Home</a></li>
+    <li><a href="#services" class="mob-link">Services</a></li>
+    <li><a href="#about" class="mob-link">About</a></li>
+    <li><a href="#team" class="mob-link">Team</a></li>
+    <li><a href="#testimonials" class="mob-link">Reviews</a></li>
+    <li><a href="#contact" class="mob-link">Contact</a></li>
+    <li><a href="#contact" class="mob-link btn-mob">Book Appointment</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="grid-lines"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span> Now Accepting New Patients
+      </div>
+      <h1 class="hero-title reveal">
+        Your Smile,<br>
+        <em>Perfected.</em>
+      </h1>
+      <p class="hero-sub reveal">Premium dental care with a gentle touch. We combine cutting-edge technology with compassionate service to give you the smile you deserve.</p>
+      <div class="hero-cta reveal">
+        <a href="#contact" class="btn-primary">Book a Free Consultation</a>
+        <a href="#services" class="btn-ghost">Explore Services ↓</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-target="5000">0</span><span>+</span>
+          <p>Happy Patients</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="15">0</span><span>+</span>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="98">0</span><span>%</span>
+          <p>Satisfaction Rate</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="hero-card-main">
+        <div class="tooth-3d">
+          <svg viewBox="0 0 120 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="toothGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#ffffff"/>
+                <stop offset="100%" stop-color="#e8f4f8"/>
+              </linearGradient>
+              <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#d4a843"/>
+                <stop offset="100%" stop-color="#c8a96e"/>
+              </linearGradient>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="3" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <path class="animate-tooth" d="M60 10C38 10 20 26 20 46c0 10 4 19 11 25l6 68c1 5 5 8 9 8s8-3 9-8l3-28h-4l3-28h-4l3 28h-4l3 28c1 5 5 8 9 8s8-3 9-8l6-68c7-6 11-15 11-25 0-20-18-36-40-36z" fill="url(#toothGrad)" stroke="#c8a96e" stroke-width="1.5" filter="url(#glow)"/>
+            <path d="M45 20c-5 3-9 8-11 14" stroke="#c8a96e" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="floating-badge badge-top">
+          <span>✦</span> Premium Care
+        </div>
+        <div class="floating-badge badge-bottom">
+          <span>⬥</span> Pain Free
+        </div>
+      </div>
+      <div class="hero-card-side card-a">
+        <div class="mini-icon">🦷</div>
+        <p>Advanced<br>Whitening</p>
+      </div>
+      <div class="hero-card-side card-b">
+        <div class="mini-icon">✨</div>
+        <p>Digital<br>X-Ray</p>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- TRUST BAND -->
+<section class="trust-band">
+  <div class="trust-inner">
+    <div class="trust-item"><span>⬥</span> ADA Certified</div>
+    <div class="trust-item"><span>⬥</span> ISO 9001 Quality</div>
+    <div class="trust-item"><span>⬥</span> Emergency Care 24/7</div>
+    <div class="trust-item"><span>⬥</span> Insurance Accepted</div>
+    <div class="trust-item"><span>⬥</span> 0% Financing Available</div>
+    <div class="trust-item"><span>⬥</span> Digital Impressions</div>
+    <div class="trust-item"><span>⬥</span> ADA Certified</div>
+    <div class="trust-item"><span>⬥</span> ISO 9001 Quality</div>
+    <div class="trust-item"><span>⬥</span> Emergency Care 24/7</div>
+    <div class="trust-item"><span>⬥</span> Insurance Accepted</div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag">What We Offer</p>
+      <h2 class="section-title">Comprehensive <em>Dental Services</em></h2>
+      <p class="section-sub">From routine checkups to complete smile transformations, we provide the full spectrum of dental care under one roof.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal" data-delay="0">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5"/><path d="M24 12c-6 0-10 4-10 10 0 3 1 5.5 3 7l2 12c.3 1 1 2 2 2h6c1 0 1.7-1 2-2l2-12c2-1.5 3-4 3-7 0-6-4-10-10-10z" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
+        </div>
+        <h3>General Dentistry</h3>
+        <p>Comprehensive exams, professional cleanings, fillings, and preventive care to keep your teeth healthy for life.</p>
+        <ul class="service-list">
+          <li>Teeth Cleaning & Polishing</li>
+          <li>Dental Fillings</li>
+          <li>Root Canal Therapy</li>
+          <li>Tooth Extractions</li>
+        </ul>
+        <a href="#contact" class="service-link">Learn More →</a>
+      </div>
+      <div class="service-card reveal featured-service" data-delay="100">
+        <div class="featured-tag">Most Popular</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5"/><path d="M16 24c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M16 24l4-4 4 4 4-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Cosmetic Dentistry</h3>
+        <p>Transform your smile with our premium cosmetic treatments designed to give you the confidence you deserve.</p>
+        <ul class="service-list">
+          <li>Teeth Whitening</li>
+          <li>Porcelain Veneers</li>
+          <li>Smile Makeovers</li>
+          <li>Bonding & Contouring</li>
+        </ul>
+        <a href="#contact" class="service-link">Learn More →</a>
+      </div>
+      <div class="service-card reveal" data-delay="200">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5"/><rect x="16" y="20" width="16" height="10" rx="5" stroke="currentColor" stroke-width="1.2"/><path d="M20 20v-3a4 4 0 018 0v3" stroke="currentColor" stroke-width="1.2"/></svg>
+        </div>
+        <h3>Orthodontics</h3>
+        <p>Straighten your teeth with modern braces and clear aligners for a perfectly aligned, beautiful smile.</p>
+        <ul class="service-list">
+          <li>Clear Aligners (Invisalign)</li>
+          <li>Traditional Braces</li>
+          <li>Retainers</li>
+          <li>Bite Correction</li>
+        </ul>
+        <a href="#contact" class="service-link">Learn More →</a>
+      </div>
+      <div class="service-card reveal" data-delay="300">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5"/><path d="M18 30V22a6 6 0 1112 0v8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M15 30h18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Dental Implants</h3>
+        <p>Permanent tooth replacement solutions that look, feel, and function just like your natural teeth.</p>
+        <ul class="service-list">
+          <li>Single Tooth Implants</li>
+          <li>Full Arch Restoration</li>
+          <li>Implant-Supported Dentures</li>
+          <li>Bone Grafting</li>
+        </ul>
+        <a href="#contact" class="service-link">Learn More →</a>
+      </div>
+      <div class="service-card reveal" data-delay="400">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5"/><path d="M20 18h8M20 24h8M20 30h5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><rect x="14" y="14" width="20" height="20" rx="2" stroke="currentColor" stroke-width="1.2"/></svg>
+        </div>
+        <h3>Pediatric Dentistry</h3>
+        <p>Gentle, fun, and thorough dental care specially designed for children of all ages in a welcoming environment.</p>
+        <ul class="service-list">
+          <li>Children's Checkups</li>
+          <li>Sealants & Fluoride</li>
+          <li>Early Orthodontic Care</li>
+          <li>Cavity Prevention</li>
+        </ul>
+        <a href="#contact" class="service-link">Learn More →</a>
+      </div>
+      <div class="service-card reveal" data-delay="500">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5"/><path d="M24 16v16M16 24h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Emergency Dental</h3>
+        <p>Dental emergencies don't wait for business hours. Our team is ready to treat urgent dental issues promptly.</p>
+        <ul class="service-list">
+          <li>Toothache Relief</li>
+          <li>Broken Tooth Repair</li>
+          <li>Lost Filling / Crown</li>
+          <li>Dental Abscess Treatment</li>
+        </ul>
+        <a href="#contact" class="service-link">Learn More →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-bg">
+    <div class="about-shape"></div>
+  </div>
+  <div class="container about-grid">
+    <div class="about-visual reveal">
+      <div class="about-image-wrap">
+        <div class="about-img-placeholder">
+          <div class="clinic-illustration">
+            <svg viewBox="0 0 300 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Modern clinic room illustration -->
+              <rect x="20" y="80" width="260" height="200" rx="12" fill="#f0f7f9" stroke="#c8a96e" stroke-width="1.5"/>
+              <!-- Dental chair -->
+              <rect x="60" y="180" width="140" height="60" rx="8" fill="#ffffff" stroke="#c8a96e" stroke-width="1.5"/>
+              <rect x="180" y="160" width="30" height="30" rx="4" fill="#e8f4f8" stroke="#c8a96e" stroke-width="1"/>
+              <!-- Arm -->
+              <path d="M190 175 Q220 175 240 150" stroke="#c8a96e" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <circle cx="240" cy="148" r="8" fill="#c8a96e" opacity="0.6"/>
+              <!-- Cabinet -->
+              <rect x="210" y="200" width="55" height="60" rx="4" fill="#e8f4f8" stroke="#c8a96e" stroke-width="1"/>
+              <line x1="237" y1="200" x2="237" y2="260" stroke="#c8a96e" stroke-width="1"/>
+              <circle cx="233" cy="230" r="3" fill="#c8a96e" opacity="0.5"/>
+              <circle cx="241" cy="230" r="3" fill="#c8a96e" opacity="0.5"/>
+              <!-- Window -->
+              <rect x="40" y="100" width="80" height="60" rx="4" fill="#e8f4f8" stroke="#c8a96e" stroke-width="1"/>
+              <line x1="80" y1="100" x2="80" y2="160" stroke="#c8a96e" stroke-width="1"/>
+              <line x1="40" y1="130" x2="120" y2="130" stroke="#c8a96e" stroke-width="1"/>
+              <!-- Decorative plant -->
+              <ellipse cx="255" cy="168" rx="12" ry="10" fill="#88c9a1" opacity="0.6"/>
+              <ellipse cx="248" cy="162" rx="8" ry="7" fill="#6dba8c" opacity="0.6"/>
+              <rect x="251" y="168" width="6" height="12" rx="2" fill="#c8a96e" opacity="0.5"/>
+              <!-- Cross / medical symbol -->
+              <circle cx="150" cy="108" r="16" fill="#c8a96e" opacity="0.15" stroke="#c8a96e" stroke-width="1"/>
+              <path d="M150 100v16M142 108h16" stroke="#c8a96e" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="about-badge-float">
+          <div class="about-badge">
+            <strong>2009</strong>
+            <span>Est.</span>
+          </div>
+        </div>
+        <div class="about-award">
+          <span>🏆</span>
+          <div>
+            <strong>Best Dental Clinic</strong>
+            <p>City Awards 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-content reveal">
+      <p class="section-tag">Our Story</p>
+      <h2 class="section-title">We've Been Creating <em>Beautiful Smiles</em> Since 2009</h2>
+      <p>PearlSmile Dental was founded with a simple but powerful mission: to provide exceptional dental care in a warm, welcoming environment where patients feel truly cared for — not just treated.</p>
+      <p>Over 15 years, we've grown from a small practice to a full-service dental centre, but our values have never changed. We believe everyone deserves access to quality dental care, and we go above and beyond to make that a reality for every patient who walks through our doors.</p>
+      <div class="about-features">
+        <div class="about-feat">
+          <div class="feat-icon">⚙</div>
+          <div>
+            <h4>Advanced Technology</h4>
+            <p>Digital X-rays, 3D scanning, and laser dentistry for precise, comfortable treatment.</p>
+          </div>
+        </div>
+        <div class="about-feat">
+          <div class="feat-icon">♡</div>
+          <div>
+            <h4>Patient-First Philosophy</h4>
+            <p>We take time to understand your concerns and customise every treatment plan.</p>
+          </div>
+        </div>
+        <div class="about-feat">
+          <div class="feat-icon">✦</div>
+          <div>
+            <h4>Sterilisation Standards</h4>
+            <p>Strict hygiene protocols exceeding all regulatory requirements for your safety.</p>
+          </div>
+        </div>
+      </div>
+      <a href="#contact" class="btn-primary">Meet Our Team →</a>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="process">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag">Simple & Transparent</p>
+      <h2 class="section-title">Your Journey to a <em>Perfect Smile</em></h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal" data-delay="0">
+        <div class="step-num">01</div>
+        <div class="step-content">
+          <h3>Book Online</h3>
+          <p>Schedule your appointment in seconds through our easy online booking system, 24/7.</p>
+        </div>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step reveal" data-delay="150">
+        <div class="step-num">02</div>
+        <div class="step-content">
+          <h3>Consultation</h3>
+          <p>Meet your dentist for a thorough examination and personalised treatment discussion.</p>
+        </div>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step reveal" data-delay="300">
+        <div class="step-num">03</div>
+        <div class="step-content">
+          <h3>Treatment</h3>
+          <p>Receive gentle, expert care using the latest technology in our state-of-the-art clinic.</p>
+        </div>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step reveal" data-delay="450">
+        <div class="step-num">04</div>
+        <div class="step-content">
+          <h3>Smile!</h3>
+          <p>Leave with a healthier, more beautiful smile and a care plan to keep it that way.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team" id="team">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag">The Experts</p>
+      <h2 class="section-title">Meet Your <em>Dental Team</em></h2>
+      <p class="section-sub">Our highly qualified, compassionate dentists are committed to providing you with the best dental experience possible.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal" data-delay="0">
+        <div class="team-avatar">
+          <div class="avatar-placeholder" style="--hue: 200">
+            <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="30" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M12 72c0-15 12.5-28 28-28s28 13 28 28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+        <div class="team-info">
+          <h3>Dr. Amelia Chen</h3>
+          <p class="team-title">Lead Dentist & Cosmetic Specialist</p>
+          <p class="team-bio">BDS, MDS (Prosthodontics) · 18 years experience · Harvard Dental School alumna</p>
+          <div class="team-tags">
+            <span>Cosmetics</span>
+            <span>Implants</span>
+            <span>Veneers</span>
+          </div>
+        </div>
+      </div>
+      <div class="team-card reveal" data-delay="150">
+        <div class="team-avatar">
+          <div class="avatar-placeholder" style="--hue: 160">
+            <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="30" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M12 72c0-15 12.5-28 28-28s28 13 28 28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+        <div class="team-info">
+          <h3>Dr. Raj Patel</h3>
+          <p class="team-title">Orthodontist</p>
+          <p class="team-bio">BDS, MS (Orthodontics) · 12 years experience · Invisalign Platinum Provider</p>
+          <div class="team-tags">
+            <span>Braces</span>
+            <span>Aligners</span>
+            <span>Jaw Correction</span>
+          </div>
+        </div>
+      </div>
+      <div class="team-card reveal" data-delay="300">
+        <div class="team-avatar">
+          <div class="avatar-placeholder" style="--hue: 30">
+            <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="30" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M12 72c0-15 12.5-28 28-28s28 13 28 28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+        <div class="team-info">
+          <h3>Dr. Sofia Martins</h3>
+          <p class="team-title">Pediatric Dentist</p>
+          <p class="team-bio">BDS, MDS (Pedodontics) · 10 years experience · Child-friendly specialist</p>
+          <div class="team-tags">
+            <span>Children</span>
+            <span>Preventive</span>
+            <span>Sealants</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE AFTER SLIDER -->
+<section class="results">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag">Real Results</p>
+      <h2 class="section-title">See the <em>Transformation</em></h2>
+      <p class="section-sub">Slide to reveal the stunning before & after results from our patients.</p>
+    </div>
+    <div class="ba-container reveal">
+      <div class="ba-slider" id="ba-slider">
+        <div class="ba-before">
+          <div class="ba-fill before-fill">
+            <div class="ba-label">Before</div>
+            <div class="ba-teeth before-teeth">
+              <svg viewBox="0 0 300 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0" y="0" width="300" height="120" fill="#f5e6d3"/>
+                <text x="150" y="65" text-anchor="middle" font-size="14" fill="#8a7060" font-family="DM Sans">Uneven & Discoloured</text>
+                <!-- Teeth row - before (uneven, yellowish) -->
+                <g transform="translate(30, 30)">
+                  <rect x="0" y="0" width="28" height="52" rx="6" fill="#d4b483" stroke="#a08060" stroke-width="1"/>
+                  <rect x="32" y="5" width="24" height="47" rx="6" fill="#cca870" stroke="#a08060" stroke-width="1"/>
+                  <rect x="60" y="2" width="22" height="50" rx="5" fill="#d0ac78" stroke="#a08060" stroke-width="1"/>
+                  <rect x="86" y="0" width="30" height="54" rx="6" fill="#c8a060" stroke="#a08060" stroke-width="1"/>
+                  <rect x="120" y="3" width="30" height="51" rx="6" fill="#cba870" stroke="#a08060" stroke-width="1"/>
+                  <rect x="154" y="6" width="22" height="46" rx="5" fill="#d0ac78" stroke="#a08060" stroke-width="1"/>
+                  <rect x="180" y="0" width="28" height="55" rx="6" fill="#c8a060" stroke="#a08060" stroke-width="1"/>
+                  <rect x="212" y="4" width="26" height="50" rx="6" fill="#d4b483" stroke="#a08060" stroke-width="1"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="ba-after">
+          <div class="ba-fill after-fill">
+            <div class="ba-label after-label">After</div>
+            <div class="ba-teeth after-teeth">
+              <svg viewBox="0 0 300 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0" y="0" width="300" height="120" fill="#f0f8fc"/>
+                <text x="150" y="65" text-anchor="middle" font-size="14" fill="#4a7a8a" font-family="DM Sans">Perfect & Radiant</text>
+                <!-- Teeth row - after (even, white) -->
+                <g transform="translate(25, 25)">
+                  <rect x="0" y="0" width="30" height="55" rx="8" fill="#f8fbff" stroke="#c8a96e" stroke-width="1.5"/>
+                  <rect x="33" y="0" width="30" height="55" rx="8" fill="#ffffff" stroke="#c8a96e" stroke-width="1.5"/>
+                  <rect x="66" y="0" width="28" height="55" rx="7" fill="#f8fbff" stroke="#c8a96e" stroke-width="1.5"/>
+                  <rect x="97" y="0" width="32" height="55" rx="8" fill="#ffffff" stroke="#c8a96e" stroke-width="1.5"/>
+                  <rect x="132" y="0" width="32" height="55" rx="8" fill="#f8fbff" stroke="#c8a96e" stroke-width="1.5"/>
+                  <rect x="167" y="0" width="28" height="55" rx="7" fill="#ffffff" stroke="#c8a96e" stroke-width="1.5"/>
+                  <rect x="198" y="0" width="30" height="55" rx="8" fill="#f8fbff" stroke="#c8a96e" stroke-width="1.5"/>
+                  <rect x="231" y="0" width="30" height="55" rx="8" fill="#ffffff" stroke="#c8a96e" stroke-width="1.5"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="ba-handle" id="ba-handle">
+          <div class="ba-handle-line"></div>
+          <div class="ba-handle-circle">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M8 12H16M4 12l4-4M4 12l4 4M20 12l-4-4M20 12l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag">Patient Stories</p>
+      <h2 class="section-title">What Our Patients <em>Say</em></h2>
+    </div>
+    <div class="testimonial-track-wrap">
+      <div class="testimonial-track" id="testimonial-track">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"I had severe dental anxiety but the team at PearlSmile made me feel completely at ease. Dr. Chen's gentle touch and patience completely changed my view of dentistry. My new veneers look absolutely stunning!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar" style="background: #fde8d0">SL</div>
+            <div>
+              <strong>Sarah L.</strong>
+              <span>Porcelain Veneers</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"After years of hiding my smile, I finally got my implants done here. The entire process was smooth, professional, and the results exceeded every expectation. I can't stop smiling now — literally!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar" style="background: #d0e8fd">MR</div>
+            <div>
+              <strong>Mark R.</strong>
+              <span>Dental Implants</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Brought my 6-year-old here and she actually loved it! Dr. Sofia was incredible with her — so patient and fun. The whole clinic has such a calming atmosphere. We won't go anywhere else."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar" style="background: #d0fde8">JT</div>
+            <div>
+              <strong>Jenny T.</strong>
+              <span>Pediatric Dentistry</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Started Invisalign treatment with Dr. Patel 14 months ago. The transformation is incredible! His expertise and the regular check-ins made the whole journey manageable and exciting."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar" style="background: #fdd0e8">AK</div>
+            <div>
+              <strong>Arun K.</strong>
+              <span>Invisalign Treatment</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Had a dental emergency on a Sunday and they saw me within the hour! The service was exceptional and they walked me through everything clearly. Saved my tooth and my sanity."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar" style="background: #e8d0fd">CM</div>
+            <div>
+              <strong>Claire M.</strong>
+              <span>Emergency Care</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"The whitening treatment gave me 8 shades brighter teeth in a single session! Staff were warm, the clinic is spotless and modern. Best investment I've made in myself in a long time."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar" style="background: #fdfdd0">DN</div>
+            <div>
+              <strong>David N.</strong>
+              <span>Teeth Whitening</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-nav">
+        <button class="t-btn" id="t-prev">←</button>
+        <div class="t-dots" id="t-dots"></div>
+        <button class="t-btn" id="t-next">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag">Transparent Pricing</p>
+      <h2 class="section-title">Simple, <em>Honest Pricing</em></h2>
+      <p class="section-sub">No hidden fees. No surprises. What you see is what you pay — and we accept all major insurance providers.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card reveal" data-delay="0">
+        <h3>Routine Care</h3>
+        <div class="price">Starting at <strong>$89</strong></div>
+        <ul>
+          <li>✓ Comprehensive Exam</li>
+          <li>✓ Professional Cleaning</li>
+          <li>✓ Digital X-Rays</li>
+          <li>✓ Oral Cancer Screening</li>
+          <li>✓ Treatment Plan</li>
+        </ul>
+        <a href="#contact" class="btn-outline">Book Now</a>
+      </div>
+      <div class="pricing-card featured-pricing reveal" data-delay="150">
+        <div class="popular-badge">Best Value</div>
+        <h3>Smile Refresh</h3>
+        <div class="price">Starting at <strong>$349</strong></div>
+        <ul>
+          <li>✓ Everything in Routine</li>
+          <li>✓ Professional Whitening</li>
+          <li>✓ Gum Treatment</li>
+          <li>✓ 1 Year Follow-up Plan</li>
+          <li>✓ Complimentary Retouching</li>
+        </ul>
+        <a href="#contact" class="btn-primary">Book Now</a>
+      </div>
+      <div class="pricing-card reveal" data-delay="300">
+        <h3>Complete Makeover</h3>
+        <div class="price">Custom <strong>Quote</strong></div>
+        <ul>
+          <li>✓ Full Cosmetic Consultation</li>
+          <li>✓ Veneers or Crowns</li>
+          <li>✓ Whitening Included</li>
+          <li>✓ Flexible Payment Plans</li>
+          <li>✓ Lifetime Maintenance Discount</li>
+        </ul>
+        <a href="#contact" class="btn-outline">Get a Quote</a>
+      </div>
+    </div>
+    <p class="insurance-note reveal">We accept Delta Dental, Cigna, Aetna, MetLife, United Healthcare & most major insurance plans. 0% financing available on treatment plans over $500.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag">Got Questions?</p>
+      <h2 class="section-title">Frequently Asked <em>Questions</em></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q">How often should I visit the dentist? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>We recommend visiting every 6 months for a routine cleaning and check-up. However, if you have active gum disease, dental work in progress, or other concerns, more frequent visits may be recommended by your dentist.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Do you accept dental insurance? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Yes! We accept all major dental insurance plans including Delta Dental, Cigna, Aetna, MetLife, and more. We also offer 0% interest financing options for larger treatments. Our team will help maximise your insurance benefits.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Is teeth whitening safe? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Absolutely. Professional teeth whitening performed by a qualified dentist is completely safe. We use clinically tested, ADA-approved whitening agents that achieve brilliant results without damaging enamel. Some patients experience mild, temporary sensitivity.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">What age should my child first visit the dentist? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>The American Academy of Pediatric Dentistry recommends a child's first dental visit by their first birthday, or within 6 months of their first tooth appearing. Early visits help establish good habits and catch any issues early.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">How long do dental implants last? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Dental implants are designed to be a permanent solution and can last a lifetime with proper care. The crown portion may need replacement after 10–15 years depending on wear. Implants have a success rate of over 95%.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Do you offer emergency dental appointments? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Yes! We offer same-day emergency appointments for urgent cases like severe toothaches, broken teeth, lost crowns, or dental abscesses. Call our emergency line and we will see you as soon as possible — even on weekends.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT & BOOKING -->
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info reveal">
+      <p class="section-tag">Get In Touch</p>
+      <h2 class="section-title">Book Your <em>Appointment</em></h2>
+      <p>Take the first step toward your best smile. Fill in the form and our team will confirm your appointment within 24 hours.</p>
+      <div class="contact-details">
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <strong>Address</strong>
+            <p>123 Pearl Avenue, Suite 200<br>New York, NY 10001</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <strong>Phone</strong>
+            <p>(212) 555-0198<br>Emergency: (212) 555-0199</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉</div>
+          <div>
+            <strong>Email</strong>
+            <p>hello@pearlsmiledental.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🕐</div>
+          <div>
+            <strong>Hours</strong>
+            <p>Mon–Fri: 8am – 7pm<br>Sat: 9am – 4pm<br>Sun: Emergency Only</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form-wrap reveal">
+      <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="Jane" required/>
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" placeholder="Doe" required/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="jane@example.com" required/>
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="(212) 555-0000"/>
+        </div>
+        <div class="form-group">
+          <label>Service Needed</label>
+          <select required>
+            <option value="" disabled selected>Select a service</option>
+            <option>General Check-up & Cleaning</option>
+            <option>Teeth Whitening</option>
+            <option>Dental Implants</option>
+            <option>Orthodontics / Invisalign</option>
+            <option>Cosmetic Dentistry</option>
+            <option>Pediatric Dentistry</option>
+            <option>Emergency Care</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Preferred Date</label>
+          <input type="date"/>
+        </div>
+        <div class="form-group">
+          <label>Message (Optional)</label>
+          <textarea rows="3" placeholder="Tell us about any concerns or questions..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-full">
+          <span class="btn-text">Confirm Appointment</span>
+          <span class="btn-icon">→</span>
+        </button>
+        <p class="form-note">By submitting, you agree to our Privacy Policy. We never share your information.</p>
+      </form>
+      <div class="form-success" id="form-success">
+        <div class="success-icon">✦</div>
+        <h3>Appointment Request Sent!</h3>
+        <p>Thank you! Our team will contact you within 24 hours to confirm your appointment details.</p>
+        <a href="#home" class="btn-primary">Back to Home</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="nav-logo">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+          <path d="M20 4C14 4 9 9 9 15c0 3 1 5.5 3 7.5L14 36c.4 1.5 1.5 2 3 2s2.5-.8 3-2l.7-6h-.7l.7-6h-.7l.7 6h-.7l.7 6c.5 1.2 1.5 2 3 2s2.6-.5 3-2l2-13.5c2-2 3-4.5 3-7.5 0-6-5-11-11-11z" stroke="currentColor" stroke-width="1.2" fill="none"/>
+        </svg>
+        <span>PearlSmile</span>
+      </div>
+      <p>Premium dental care with a gentle touch. Creating beautiful, healthy smiles since 2009.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook" class="social-link">f</a>
+        <a href="#" aria-label="Instagram" class="social-link">in</a>
+        <a href="#" aria-label="Twitter" class="social-link">tw</a>
+        <a href="#" aria-label="Google" class="social-link">g</a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">General Dentistry</a></li>
+          <li><a href="#">Cosmetic Dentistry</a></li>
+          <li><a href="#">Orthodontics</a></li>
+          <li><a href="#">Dental Implants</a></li>
+          <li><a href="#">Pediatric Dentistry</a></li>
+          <li><a href="#">Emergency Care</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Clinic</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#team">Our Team</a></li>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">Patient Forms</a></li>
+          <li><a href="#">Insurance</a></li>
+          <li><a href="#contact">Book Appointment</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>123 Pearl Avenue, Suite 200</li>
+          <li>New York, NY 10001</li>
+          <li>(212) 555-0198</li>
+          <li>hello@pearlsmiledental.com</li>
+          <li>Mon–Fri: 8am – 7pm</li>
+          <li>Sat: 9am – 4pm</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 PearlSmile Dental. All rights reserved.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Accessibility</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
